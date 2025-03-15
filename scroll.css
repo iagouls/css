@@ -1,0 +1,40 @@
+#scrollToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #272727;
+    color: white;
+    border: 2px solid white;
+    border-radius: 7%;
+    font-size: 28px;
+    text-align: center;
+    line-height: 45px;
+    cursor: pointer;
+    display: none;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    opacity: 0.75;
+    transform-origin: center center;
+    z-index: 9999;
+}
+
+#scrollToTop:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    #scrollToTop {
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%) scale(1);
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    #scrollToTop {
+        right: 20px;
+    }
+}

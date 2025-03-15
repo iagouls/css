@@ -1,0 +1,16 @@
+.content-block {
+    background-color: white;
+    padding: 17px 0;
+    text-align: center;
+}
+
+.content-block .container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content-block p {
+    font-size: 18px;
+    color: #171717;
+}

@@ -1,0 +1,108 @@
+.pros-cons-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: nowrap;
+}
+
+.pros-cons-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    max-width: 300px;
+    display: block;
+}
+
+.pros-cons-list {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    flex-wrap: nowrap;
+    align-items: stretch;
+}
+
+.pros-box, .cons-box {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 15px;
+    height: 100%;
+    min-height: 380px;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease;
+}
+
+.pros-box {
+    background-color: #e8f5e9;
+    border-left: 5px solid #388e3c;
+}
+
+.cons-box {
+    background-color: #ffebee;
+    border-left: 5px solid #d32f2f;
+}
+
+.pros-box:hover, .cons-box:hover {
+    transform: scale(1.05);
+    background-color: #f1f8e9;
+}
+
+.pros-cons-list h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pros-cons-list ul, .pros-cons-list li {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.pros-cons-list li {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .pros-cons-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .pros-cons-image img {
+        max-width: 80%;
+    }
+
+    .pros-cons-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .pros-box, .cons-box {
+        width: 100%;
+        min-height: auto;
+    }
+
+    .pros-cons-list h3 {
+        font-size: 20px;
+    }
+
+    .pros-cons-list li {
+        font-size: 16px;
+    }
+}

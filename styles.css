@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Jost', sans-serif;
+}
+
+ul {
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+h1 {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+  width: 1px;
+  height: 1px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos Gerais para Desktop e Mobile */
+.tittle-page {
+  font-weight: bold;
+  margin-top: 20px;
+  text-shadow:
+      1px 1px 2px #000,
+      -1px -1px 2px #000,
+      1px -1px 2px #000,
+      -1px 1px 2px #000;
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .tittle-page {
+    font-size: 100px;
+    color: #007953;
+    /* Remover text-transform para não forçar maiúsculas */
+    text-transform: none;
+  }
+}
+
+/* Mobile */
+@media (max-width: 1024px) {
+  .tittle-page {
+    font-size: 55px;
+    color: #007953;
+    /* Remover text-transform para não forçar maiúsculas */
+    text-transform: none;
+  }
+}

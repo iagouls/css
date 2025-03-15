@@ -1,0 +1,41 @@
+/* Gradiente Topo */
+.gradient-top {
+    background: linear-gradient(to right, #272727 , #1d916d);
+    padding: 15px 0; /* Reduzi o padding do topo */
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 2px solid #333;
+}
+
+/* Botão com efeito bounce ao carregar e ao passar o mouse */
+.gradient-top .cta-button .btn {
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #ffd51c;
+    color: #121212;
+    border: 1px solid #272727;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    white-space: nowrap; /* Para evitar a quebra de linha */
+    animation: bounceIn 1s ease-out; /* Aplica a animação de bounce ao carregar */
+}
+
+/* Efeito bounce ao passar o mouse */
+.gradient-top .cta-button .btn:hover {
+    background-color: #ffde4a;
+    color: black;
+    animation: bounceIn 0.6s ease-out; /* Aplica a animação de bounce ao passar o mouse */
+    transform: scale(1.1); /* Dá o efeito de aumento ao passar o mouse */
+}
+
+/* Estilo para o contador de leitores */
+.gradient-top .reading-count {
+    margin-top: 10px;
+    font-size: 16px;
+    color: white; /* Cor branca para o contador */
+}
