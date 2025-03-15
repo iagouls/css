@@ -1,26 +1,21 @@
-/* Estilo para a imagem do produto */
 .product-image {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
 }
 
-/* Imagem do produto com largura e altura consistentes */
 .product-image img {
     width: 100%;
     max-width: 570px;
     height: auto;
-    display: block; /* Impede o "layout shift" */
 }
 
-/* Estilo para o botão */
 .cta-button {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
 }
 
-/* Botão principal */
 .cta-button .btn {
     font-size: 20px;
     font-weight: bold;
@@ -30,39 +25,35 @@
     padding: 15px 20px;
     border-radius: 5px;
     text-decoration: none;
-    transition: background-color 0.3s ease, color 0.3s ease; /* Ajustado para transições suaves */
-    width: auto;
-    min-width: 200px; /* Largura mínima para evitar "layout shifts" */
+    transition: all 0.3s ease;
+    animation: pulse 1.5s infinite;
     max-width: 400px;
-    height: 60px; /* Altura fixa para garantir estabilidade do layout */
-    box-sizing: border-box; /* Garante que o padding não afete o tamanho final do botão */
+    width: 100%;
 }
 
-/* Efeito de hover para o botão */
 .cta-button .btn:hover {
     background-color: #ffde4a;
     color: black;
 }
 
-/* Ajuste para o botão em dispositivos menores */
-@media (max-width: 768px) {
-    .cta-button .btn {
-        font-size: 14px;
-        padding: 10px 15px;
-        width: 100%; /* Ocupa toda a largura disponível em telas menores */
-        height: 50px; /* Ajuste de altura para dispositivos menores */
-        max-width: 350px;
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
     }
 }
 
-/* Estilo para a imagem na parte inferior */
 .bottom-image {
     display: flex;
     justify-content: center;
     margin-top: 20px;
 }
 
-/* Imagem da parte inferior com consistência no tamanho */
 .bottom-image img {
     width: 100%;
     max-width: 600px;
@@ -70,7 +61,6 @@
     margin-top: 3px;
 }
 
-/* Media query para dispositivos móveis */
 @media (max-width: 768px) {
     .content-block .container {
         width: 90%;
@@ -83,6 +73,12 @@
     .product-image img {
         max-width: 100%;
         margin-bottom: 15px;
+    }
+
+    .cta-button .btn {
+        font-size: 14px;
+        padding: 10px 15px;
+        max-width: 350px;
     }
 
     .bottom-image img {
