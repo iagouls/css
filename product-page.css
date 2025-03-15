@@ -67,12 +67,6 @@
         margin-left: 20%;
     }
 
-    .highlight {
-        font-size: 40px;
-        line-height: 1.4;
-        margin-bottom: 10px;
-    }
-
     .details {
         font-size: 20px;
         color: #171717;
@@ -110,10 +104,6 @@
 
     .product-info h2 {
         font-size: 24px;
-    }
-
-    .highlight-text {
-        font-size: 22px;
     }
 
     .details {
